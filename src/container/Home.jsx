@@ -1,6 +1,6 @@
 import {useState, useEffect} from 'react'
 import {Character} from '../components/Characters'
-
+ 
 
 export const Home = () => {
     const [characters, SetCharacters] = useState([])
@@ -9,6 +9,8 @@ export const Home = () => {
             .then(response => response.json())
             .then(data => SetCharacters(data.results)) 
     },[])
+    console.log(characters)
+
 
     return(
         <>
