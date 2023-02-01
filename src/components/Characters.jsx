@@ -9,12 +9,11 @@ export const Character = ({
 }) => {
     return(
         <>
-            <div className="containerCharacter">
+            <div className="insideTargetCharacter">
                 <img src={image} className="imageCharacter" alt="character"/>
                 <div className="informationCharacter">
-                    <span>{name} </span>
-                    <span>{specie} </span>
-                    <span>{status} </span>
+                    <span className="nameCharacter">{name} </span>
+                    <span className="descCharacter">{status} - {specie}</span>
                 </div>
             </div>
         </>
