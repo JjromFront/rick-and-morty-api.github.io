@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+body
+{
+    /* background: url('https://www.nationalgeographic.com.es/medio/2022/12/02/ilustracion-de-la-via-lactea_5bda8e02_481229372_221202114651_1280x909.jpg');
+    background: ;
+    background-repeat: no-repeat; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+
+/* Tarjetas de cada personaje css */
+
+/* Estilos contenedores */
+.imageCharacter
+{
+    height: 13pc;
+    width: 13pc;
+    border-radius: 10px;
+}
+
+.insideTargetCharacter
+{
+    display: flex;
+    align-items: center;
+    margin: 20px 10px;
+    background: #3C3E44;
+    width: 34pc;
+    height: 13pc;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+}
+
+.informationCharacter
+{
+    padding: 20px;
+    display: block;
+    padding: 5px;
+    margin-left: 10px;
+}
+
+
+/* Estilos informacion de la tarjeta*/
+.nameCharacter
+{
+    position: absolute;
+    top: 7px;
+    font-size: 23px;
+    color: #f2f2f2;
+    font-weight: 700;
+
+}
+
+.descCharacter
+{
+    position: absolute;
+    font-size: 14px;
+    top: 38px;
+    left: 237px;
+}
+
+.indicator
+{
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    top: 44px;
+    background: #fff;
+}
+
+label
+{
+    font-size: 15px;
+    color: #adadad;
+    padding-top: 10px;
+    font-weight: 500;
+}
+
+.locationInformation
+{
+    font-weight: 300;
+    font-size: 16px;
+}
+
+
+.isAlive
+{
+    background: #72ff4f;
+}
+
+.isDead
+{
+    background: #ff4f4f;
+}
+
+.modal {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    top: 0;
+    width: 300px;
+    height: 100px;
+    border-radius: 5px;
+    color: red;
+    background: white;
+}
