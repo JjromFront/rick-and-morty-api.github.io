@@ -5,16 +5,16 @@ export const Character = ({
     name,
     numberEpisodes,
     specie,
-    status
+    status,
+    onClick = () => { }
 }) => {
-    return(
+    return (
         <>
-            <div className="containerCharacter">
-                <img src={image} className="imageCharacter" alt="character"/>
+            <div className="insideTargetCharacter" onClick={onClick}>
+                <img src={image} className="imageCharacter" alt="character" />
                 <div className="informationCharacter">
-                    <span>{name} </span>
-                    <span>{specie} </span>
-                    <span>{status} </span>
+                    <span className="nameCharacter">{name} </span>
+                    <span className="descCharacter">{status} - {specie}</span>
                 </div>
             </div>
         </>
