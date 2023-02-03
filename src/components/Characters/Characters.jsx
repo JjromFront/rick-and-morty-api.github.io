@@ -1,11 +1,9 @@
 import './index.css';
 
 export const Character = ({
-    gender,
     image,
     location,
     name,
-    numberEpisodes,
     origin, 
     specie,
     status,

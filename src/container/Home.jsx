@@ -4,7 +4,7 @@ import './index.css'
 
 
 export const Home = () => {
-    const [characters, SetCharacters] = useState([])
+    const [characters, setCharacters] = useState([])
     const [isOpen, setOpen] = useState(false)
     const [loading, setLoading] = useState(false)
     const [dataProfile, setDataProfile] = useState({})
@@ -14,8 +14,8 @@ export const Home = () => {
         fetch(process.env.REACT_APP_API_LINK)
         .then(response => response.json())
         .then(data => {
-            setLoading(false)
-                SetCharacters(data.results)
+                setLoading(false)
+                setCharacters(data.results)
             })
             .catch(error => console.error(error))
     }, [])
@@ -47,9 +47,8 @@ export const Home = () => {
 
                     {
                         isOpen &&
-                        <div className='modal'>
-                            {dataProfile.name}
-                        </div>
+                        <>
+                        </>
                     }
                 </div>
             </div>
