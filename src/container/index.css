@@ -7,11 +7,12 @@ body
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     color: #fff;
+    overflow-x: hidden;
 }
 .charactersContainer
 {
     background: #272B33;
-    margin-top: 20pc;
+    margin-top: 15pc;
 }
 
 .characterTarget

@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Character } from '../components/Characters/Characters'
+import { Nav } from '../components/Navbar/Nav'
 import './index.css'
 
 
@@ -26,6 +27,7 @@ export const Home = () => {
     if (loading) return <>Loading</>
     return (
         <>
+        <Nav/>
             <div className='charactersContainer'>
                 <div className='characterTarget'>
                     {
@@ -50,6 +52,7 @@ export const Home = () => {
                         <>
                         </>
                     }
+
                 </div>
             </div>
         </>
