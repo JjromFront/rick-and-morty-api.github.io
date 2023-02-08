@@ -14,6 +14,7 @@
     color: #fff;
     background: #1C1C1C;
     display: flex;
+    z-index: 11;
 }
 
 .characterInfo

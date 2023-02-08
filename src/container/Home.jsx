@@ -30,7 +30,26 @@ export const Home = () => {
     if (loading) return <>Loading</>
     return (
         <>
+
+            {
+                isOpen &&
+                <>
+                    <CharacterInfo
+                        onClick={() => { setOpen(false) }}
+                        name={dataProfile.name}
+                        status={dataProfile.status}
+                        specie={dataProfile.species}
+                        type={dataProfile.type}
+                        gender={dataProfile.gender}
+                        origin={dataProfile.origin.name}
+                        location={dataProfile.location.name}
+                        image={dataProfile.image}
+                    />
+                </>
+            }
+        <div className={isOpen ? "backgroundModal open": "backgroundModal"}>
             <Nav />
+            
             <div className="charactersContainer">
                 <div className='searchInputContainer'>
                     <input type="text" placeholder='Search...' className='searchInput' onChange={(event) => {
@@ -61,25 +80,10 @@ export const Home = () => {
                         })
                     }
 
-                    {
-                        isOpen &&
-                        <>
-                            <CharacterInfo
-                                onClick={() => { setOpen(false) }}
-                                name={dataProfile.name}
-                                status={dataProfile.status}
-                                specie={dataProfile.species}
-                                type={dataProfile.type}
-                                gender={dataProfile.gender}
-                                origin={dataProfile.origin.name}
-                                location={dataProfile.location.name}
-                                image={dataProfile.image}
-                            />
-                        </>
-                    }
-
                 </div>
             </div>
+        </div>
         </>
+
     )
 }
