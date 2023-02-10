@@ -23,7 +23,9 @@ body
     background: #272B33;
     margin-top: 15pc;
     height: 420vh;
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .charactersContainer.open .container

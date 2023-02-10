@@ -33,6 +33,7 @@ body
     border-radius: 5px;
     cursor: pointer;
     position: relative;
+    flex-wrap: wrap;
 }
 
 .informationCharacter
