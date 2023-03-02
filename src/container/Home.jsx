@@ -4,12 +4,11 @@ import { Nav } from '../components/Navbar/Nav'
 import { CharacterInfo } from '../components/CharacterInfo/CharacterInfo'
 import './index.css'
 
-
 export const Home = () => {
     const [characters, setCharacters] = useState([])
+    const [dataProfile, setDataProfile] = useState({})
     const [isOpen, setOpen] = useState(false)
     const [loading, setLoading] = useState(false)
-    const [dataProfile, setDataProfile] = useState({})
     const [searchTerm, setSearchTerm] = useState('')
 
     useEffect(() => {
@@ -22,11 +21,16 @@ export const Home = () => {
             })
             .catch(error => console.error(error))
     }, [])
-    
+
+    /**
+     * @date 15/02/2023
+     * @param {*} characters 
+     */
     const handleOpenModal = (characters) => {
         setOpen(true)
         setDataProfile(characters)
     }
+
     if (loading) return <>Loading</>
     return (
         <>

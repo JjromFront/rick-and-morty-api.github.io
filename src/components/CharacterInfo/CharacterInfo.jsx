@@ -1,5 +1,6 @@
 import './index.css';
-export const CharacterInfo = ({
+export const 
+CharacterInfo = ({
     name,
     status,
     specie,

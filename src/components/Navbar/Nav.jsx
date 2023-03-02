@@ -5,8 +5,8 @@ export const Nav = () => {
         <>
             <ul className="navegation">
             <img className="image_logo" src="https://repository-images.githubusercontent.com/120371205/b6740400-92d4-11ea-8a13-d5f6e0558e9b" alt="logo" width={113}/>
-                <li><a href="#">Documents</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="https://rickandmortyapi.com/documentation" target="_blank">Documents</a></li>
+                <li><a href="https://rickandmortyapi.com/about" target="_blank">About</a></li>
                 <button>Support us</button>
             </ul>
             <span className="title">La API de Rick y Morty</span>
