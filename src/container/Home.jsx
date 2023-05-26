@@ -13,7 +13,7 @@ export const Home = () => {
 
     useEffect(() => {
         setLoading(true)
-        fetch(process.env.REACT_APP_API_LINK)
+        fetch("https://rickandmortyapi.com/api/character")
             .then(response => response.json())
             .then(data => {
                 setLoading(false)
